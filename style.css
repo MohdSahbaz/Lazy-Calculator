@@ -1,138 +1,68 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
 body{
+    height: 97.7vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    /* background-color: #E7F6FF; */
-    background-color: #02586F;
-    /* color: white; */
+    background-color: #393f4d;
+    color: aliceblue;
+    background: linear-gradient(50deg, #003554, #032030);
 }
-.container{
-    background-color: #99CAD9;
-    padding: 2rem;
-    border: 1px solid white;
-    box-shadow: 0px 0px 5px rgb(6, 255, 6),
-                0px 0px 10px rgb(0, 255, 242);
-    border-radius: 1rem;
-    height: auto;
-    width: auto;
-}
-.container h1{
-    color: rgb(116, 2, 2);
-    text-shadow: 0px 0px 5px #001fff,
-                0px 0px 10px #00fff3;
-}
-form{
-    margin: 2rem 0 1rem 0;
-}
-form input,select,button{
-    width: 100%;
-    border: none;
-    outline: none;
-    border-radius: 3px;
-}
-form input{
-    border: 1px solid #002fff;
-    font-size: 1rem;
-    box-shadow: 0px 0px 3px red,
-                0px 0px 2px green;
-    height: 2.5rem;
-    padding: 0px 0.5rem;
-    margin-top: 1rem;
-}
-.dropdown{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 2rem;
-}
-.dropdown i{
+input{
+    color: rgb(2, 4, 87);
+    background-color: ghostwhite;
+    width: 280px;
+    border-radius: 4px;
+    text-shadow: 0px 0px 2px maroon;
+    padding: 2px 10px;
     font-size: 1.5rem;
-    margin-top: 1rem;
-    color: rgb(121, 3, 3);
-}
-.country-container img{
-    max-width: 2rem;
-    padding: 1px 0px 1px 3px;
-}
-.country-container{
+    border: 2px solid rgb(4, 138, 127);
+    box-shadow: 0px 0px 5px rgb(198, 255, 64),
+                0px 0px 7px yellow;
+    outline: none;
     display: flex;
-    justify-content: center;
-    margin-top: 0.5rem;
-    background-color: #7ecdf5;
-    align-items: center;
-    border: 1px solid #006DA4;
-    border-radius: 0.2rem;
-    width: 6rem;
+    margin-top: 10px;
 }
-.country-container select{
-    font-size: 1rem;
-    width: auto;
-    background-color: #7ecdf5;
-    cursor: pointer;
-}
-.final-mess{
-    margin: 3rem 0 1rem 0;   
-    text-align: center;
-    color: maroon;
-    font-size: 1.3rem;
-    text-shadow: 0px 0px 5px greenyellow,
-                0px 0px 3px yellow;
-}
-form button{
-    margin-top: 1.5rem;
-    height: 3rem;
-    font-size: 1rem;
-    background-color: #02586F;
-    color: white;
+button{
+    margin: 20px 0px 12px 0px;
+    border: 2px solid maroon;
     border-radius: 1rem;
-    cursor: pointer;
-    border: 2px solid black;
-    box-shadow: 0px 0px 5px white,
-                0px 0px 8px rgb(0, 255, 42);
-}
-form button:hover{
-    background-color: #004457;
-    animation: buttonget 1s 0s ease-in-out infinite alternate;
-}
-@keyframes buttonget {
-    from{
-        box-shadow: 0px 0px 8px rgb(0, 255, 213),
-                0px 0px 10px rgb(225, 0, 255);
-    }
-    to{
-        box-shadow: 0px 0px 10px rgb(255, 0, 0),
-                0px 0px 15px rgb(0, 47, 255);
-    }
-}
-
-@media  only screen and (max-width:600px) {
-    .container{
-        width: 90%;
-        flex-wrap: wrap;
-    }
-    .container h1{
-        font-size: 25px;
-    }
-    .final-mess{
-        font-size: 15px;
-    }
-}
-.dark{
-    background-color: #02586F;   
-}
-.light{
-    background-color: #99CAD9;
-}
-.btntheme{
-    border: 2px solid;
+    background-color: rgb(1, 68, 99);
+    width: 50px;
+    height: 50px;
+    color: aqua;
     font-size: large;
-    width: 5rem;
-    padding: 5px 8px;
-    border-radius: 0.5rem;
+    font-weight: bold;
+    box-shadow: 0px 0px 5px rgb(27, 253, 27),
+                0px 0px 10px rgb(0, 252, 105);
+    cursor: pointer;
+}
+.sub, .multi, .divi{
+    margin: 20px 5px 12px 5px;
+}
+.add{
+    margin: 20px 5px 12px 0px;
+}
+.modu{
+    margin: 20px 0px 12px 5px;
+}
+.heading h1{
+    text-shadow: 0px 0px 5px green,
+                0px 0px 8px greenyellow;
+}
+.finalans p{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px green,
+                0px 0px 8px greenyellow;
+}
+.reset{
+    background: #000;
+    width: 280px;
+    padding: 5px 0px 5px 0px;
+    font-size: medium;
+    height: fit-content;
+    margin-top: -10px;
+    color: snow;
 }
